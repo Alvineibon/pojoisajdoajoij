@@ -16,7 +16,7 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
 You can configure IAM role on the EC2 instance to make this more simple
 
 For Q3, two env MONGODB and BASEURL is needed to reflect the mongodb connection string and Domain name of the short url
-![https://user-images.githubusercontent.com/40196992/97959171-ba975f00-1de9-11eb-967a-55787158fb58.png]
+![architecture](https://user-images.githubusercontent.com/40196992/97959171-ba975f00-1de9-11eb-967a-55787158fb58.png)
 
 ```
 docker build -t shorturl .
