@@ -1,4 +1,6 @@
-For Q1, command geoiplookup is required. You can install it by
+Q1 
+
+command geoiplookup is required. You can install it by
 
 Debian/Ubuntu
 ```
@@ -9,15 +11,19 @@ CentOS/RHEL
 yum install GeoIP GeoIP-data
 ```
 
-For Q2, aws cli is required.Installation instruction can be found on 
+Q2
+
+aws cli is required.Installation instruction can be found on 
 
 https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
 
 You can configure IAM role on the EC2 instance to make this more simple
 
-For Q3, two env MONGODB and BASEURL is needed to reflect the mongodb connection string and Domain name of the short url
+Q3
 ![architecture](https://user-images.githubusercontent.com/40196992/97959171-ba975f00-1de9-11eb-967a-55787158fb58.png)
 
+
+two env MONGODB and BASEURL is needed to reflect the mongodb connection string and Domain name of the short url
 ```
 docker build -t shorturl .
 docker run -p 5000:5000 -e MONGODB='mongodb+srv://user:abcd1234@demo.vwlvn.mongodb.net/shorturl?retryWrites=true&w=majority'  -e BASEURL='https://shorturl.org' shorturl
