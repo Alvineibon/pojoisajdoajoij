@@ -38,6 +38,10 @@ configmaps are used instead of Secrets easy config read. Load Balance EC2 runnin
 
 For the database part, it will better to use AWS DynamoDB/Documentdb or Mongodb altas. I have created a free tier Mongodb altas for demo. Everything can be also ran in local using docker.
 
+For CDN(Cloudfront) part, I used terraform as the IaC. And I have test for some request. I can cache the response properly, so the GET request will not genearate much load to the service.
+
+![cloudfron](https://user-images.githubusercontent.com/40196992/98055038-7f437180-1e77-11eb-8bf7-9d99c93a04e6.png)
+
 Command
 POST newurl
 ```
